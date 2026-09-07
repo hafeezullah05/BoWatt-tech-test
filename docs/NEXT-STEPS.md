@@ -1,6 +1,6 @@
 # What I'd do next, if I kept working on this
 
-- Build the `search_web` tool (Tavily) and a real Claude tool-calling loop — the biggest
+- Build the `search_web` tool (Tavily) and a real Claude tool-calling loop. the biggest
   remaining gap against the brief. See [ARCHITECTURE.md](ARCHITECTURE.md) for why I skipped it.
 - Turn the evaluation approach in [EVALUATION.md](EVALUATION.md) into an actual runnable script,
   not just a description.
