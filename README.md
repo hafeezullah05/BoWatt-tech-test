@@ -10,8 +10,8 @@ Docs: [Architecture & design decisions](docs/ARCHITECTURE.md) ·
 
 ## What's working
 
-- `POST /api/research` — streams a Claude-generated answer.
-- `POST /api/sources` — uploads `.txt`-style files, chunks + embeds them locally, stores them in
+- `POST /api/research` : streams a Claude-generated answer.
+- `POST /api/sources` : uploads `.txt`-style files, chunks + embeds them locally, stores them in
   Chroma.
 - Retrieval: before answering, the backend embeds the question, pulls relevant stored chunks (if
   any), and feeds them to Claude as context.
@@ -71,7 +71,7 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 
 ## Try it
 
-1. Upload a `.txt` file with something Claude wouldn't already know.
+1. Upload a `.txt` file with something LLM->Claude (as used anthropic API) wouldn't already know.
 2. Ask about it — the answer should reflect the file, not general knowledge.
 3. Ask something unrelated with nothing uploaded — it should fall back to Claude's own
    knowledge.
