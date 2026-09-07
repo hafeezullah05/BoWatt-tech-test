@@ -60,7 +60,7 @@ def query(query_embedding: list[float], n_results: int = 5) -> list[str]:
         empty list if the store is empty or the query fails, so a
         retrieval problem never blocks answering the question.
     """
-    # TODO: edge case — no relevance threshold. Irrelevant chunks are still
+    # TODO: edge case when there is no relevance threshold. Irrelevant chunks are still
     # returned and injected into the prompt as long as *something* has been
     # uploaded, even if nothing stored is actually related to the question.
     collection = get_collection()
