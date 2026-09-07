@@ -20,7 +20,7 @@ async def research(payload: ResearchRequest) -> StreamingResponse:
     if not payload.request.strip():
         raise HTTPException(status_code=400, detail="Research request cannot be empty.")
 
-    # TODO: edge case — very long `request` values could exceed the model's
+    # TODO: edge case of a very long `request` values could exceed the model's
     # context window or run up cost unexpectedly. Consider a max length check.
 
     return StreamingResponse(
