@@ -20,8 +20,8 @@ made up myself. This is the actual test I ran to confirm retrieval works, not ju
 **Query unrelated to any uploaded source**
 
 Right now, if something's been uploaded but the question is about a different topic entirely,
-the backend still retrieves and injects whatever chunks are "closest" in the store — even if
+the backend still retrieves and injects whatever chunks are "closest" in the store. Even if
 they're not actually relevant, since there's no similarity cutoff yet. Claude is usually good
 at noticing irrelevant context and ignoring it, but that's Claude compensating for a gap in the
 retrieval logic, not something I've built and can guarantee. Documented as a known limitation
-rather than pretended away — see [ARCHITECTURE.md](ARCHITECTURE.md).
+rather than pretended away; see [ARCHITECTURE.md](ARCHITECTURE.md).
