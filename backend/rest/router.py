@@ -59,9 +59,9 @@ async def upload_sources(files: list[UploadFile] = File(...)) -> UploadResponse:
     if not files:
         raise HTTPException(status_code=400, detail="No files provided.")
 
-    # TODO: edge case — no limit on file size or count; a very large upload
+    # TODO: edge case when there is no limit on file size or count; a very large upload
     # could exhaust memory or take a long time to embed.
-    # TODO: edge case — re-uploading the same file creates duplicate chunks
+    # TODO: edge case when re-uploading the same file creates duplicate chunks
     # in Chroma; no deduplication exists.
 
     results = await asyncio.gather(*(_process_file(file) for file in files))
