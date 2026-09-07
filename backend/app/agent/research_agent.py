@@ -59,7 +59,7 @@ async def stream_research(request: str) -> AsyncIterator[str]:
     prompt = _build_prompt(request, context_chunks)
     client = AsyncAnthropic(api_key=settings.anthropic_api_key)
 
-    # TODO: no system prompt — Claude isn't explicitly instructed to behave
+    # TODO: no system prompt here, Claude isn't explicitly instructed to behave
     # like a research agent, cite when it uses retrieved context, or say
     # when it doesn't know something.
     # TODO: max_tokens is hardcoded; a long answer could be cut off silently.
