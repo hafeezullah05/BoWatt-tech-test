@@ -1,13 +1,14 @@
-
-
 """Application configuration.
 
 Reads settings from environment variables (and a local .env file during
 development) into a single typed object so the rest of the app never touches
 os.environ directly.
 """
+
 from functools import lru_cache
 from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
 
 class Settings(BaseSettings):
     """Typed application settings loaded from environment variables.
