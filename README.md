@@ -72,8 +72,8 @@ Open the URL Vite prints (usually `http://localhost:5173`).
 ## Try it
 
 1. Upload a `.txt` file with something LLM->Claude (as used anthropic API) wouldn't already know.
-2. Ask about it — the answer should reflect the file, not general knowledge.
-3. Ask something unrelated with nothing uploaded — it should fall back to Claude's own
+2. Ask about it : the answer should reflect the file, not general knowledge.
+3. Ask something unrelated with nothing uploaded : it should fall back to Claude's own
    knowledge.
 
 See [docs/EXAMPLES.md](docs/EXAMPLES.md) for the exact test I ran.
