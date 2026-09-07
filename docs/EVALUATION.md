@@ -1,6 +1,6 @@
 # How I'd evaluate this agent, and why
 
-Right now I have no automated way to measure answer quality — only manual spot-checking (see
+Right now I have no automated way to measure answer quality. Only manual spot-checking (see
 the Zephyrine-9 test in [EXAMPLES.md](EXAMPLES.md)). Here's what I'd actually build, in order of
 what matters most.
 
